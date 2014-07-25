@@ -1,0 +1,221 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="SoundCloud Project-R">
+    <meta name="viewport" content="width=690">
+
+    <title>SoundCloud Project-R</title>
+  <style type="text/css"></style></head>
+
+  <body>    
+    <style type="text/css" media="screen"> 
+
+	@-webkit-keyframes blink {
+			0%   { background: blue;
+      background-image: radial-gradient(circle at 50% 50%, blue 60%, #101010); }
+			50%  { background:green; background-image: radial-gradient(circle at 50% 50%, green 60%, #101010);}
+			100% { background:red; background-image: radial-gradient(circle at 50% 50%, red 60%, #101010); }
+	}
+	@-moz-keyframes blink {
+			0%   { background: blue;
+      background-image: radial-gradient(circle at 50% 50%, blue 60%, #101010); }
+			50%  { background:green; background-image: radial-gradient(circle at 50% 50%, green 60%, #101010);}
+			100% { background:red; background-image: radial-gradient(circle at 50% 50%, red 60%, #101010); }
+	}
+	@-ms-keyframes blink {
+			0%   { background: blue;
+      background-image: radial-gradient(circle at 50% 50%, blue 60%, #101010); }
+			50%  { background:green; background-image: radial-gradient(circle at 50% 50%, green 60%, #101010);}
+			100% { background:red; background-image: radial-gradient(circle at 50% 50%, red 60%, #101010);}
+	}
+	
+    html, body {
+		background-color: #202020;	
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+	@font-face {
+	font-family: "Xperia";
+	src: url(Xperia.ttf) format("truetype");
+	}
+	h1 { font-family: "Xperia", sans-serif }
+	
+    body {
+		-webkit-animation: blink 3s infinite;
+		-moz-animation:    blink 3s infinite;
+		-ms-animation:     blink 3s infinite;	
+      min-width: 690px;
+      min-height: 640px;
+    
+      display: -webkit-flex;
+      -webkit-justify-content: center;
+      -webkit-align-items: center;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @font-face {
+      font-family: 'Alegreya Sans';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Alegreya Sans Light'), local('AlegreyaSans-Light'), url(http://themes.googleusercontent.com/static/fonts/alegreyasans/v1/11EDm-lum6tskJMBbdy9aaWGgEO1vGR9ucXjKCo8vxU.woff) format('woff');
+    }
+
+    #container {
+
+      position: relative;
+      margin: 70px;
+      width: 550px;
+      height: 500px;
+    }
+
+    #text {
+      position: absolute;
+      top: 200px;
+      width: 240px;
+      color: #bbb;
+      font-size: 18px;
+      font-family: 'Alegreya Sans';
+    }
+
+      .icon {
+        position: absolute;
+        bottom: 55px;
+        width: 32px;
+        height: 32px;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-decoration: none;
+        opacity: 0.1;
+      }
+
+    #soundcloud2 {
+      margin-left: 10px;
+      background-image: url(sound.png);
+      opacity: 0.1;
+    }
+
+    #soundcloud2:hover {
+      opacity: 0.3;
+    }
+  
+    #soundcloud2:active {
+      bottom: 54px;
+    }
+
+    #soundcloud {
+	  margin-right: 100px;	
+      position: absolute;
+      bottom: 110px;
+      width: 113px;
+      height: 113px;
+      border-radius: 2px;
+      background-origin: content-box;
+      background-image: url(sound.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-decoration: none;
+      box-shadow: 0 1px 0px rgba(0,0,0,0.25);
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      z-index: 100;
+    }
+
+    #soundcloud:hover {
+      background-color: #444;
+      background-position: 50% 100%;
+    }
+  
+    #soundcloud:active {
+      bottom: 109px;
+      box-shadow: 0 0 0;
+    }
+
+    #device-frame { 
+      position: center;
+      background-image: url(xps.png); 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      top: 0;
+      width: 500px;
+      height: 684px;
+    } 
+    
+    #device-screen {
+      position: absolute;
+      left: 106px;
+      top: 49px;
+      width: 304px;
+      height: 536px;
+      color: white; 
+      overflow: hidden;  
+    } 
+
+      .fullscreenlayer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 360px;
+        height: 640px;
+      }
+
+    #layer-clock {
+		position: absolute;
+      top: 200px;
+      font-size: 50px;
+      font-family: 'Xperia', sans-serif;
+      text-align: center;
+
+    }
+
+    </style>
+	
+      <div id="text">
+        <p>
+        Welcome to my personal Website.<b>SoundCloud by Project-R</b>, This is just a demo site of what i am willing to create.
+        </p>
+      </div>	      
+
+    <div id="container">    
+		<a id="soundcloud" href="https://soundcloud.com/project-rb">&nbsp;</a>	  	
+      <div id="device-frame">
+        <div id="device-screen">
+          <div id="layer-clock" class="fullscreenlayer">14:23</div>
+        </div>
+      </div>
+    </div>
+
+  
+
+  <script>   
+    function displayTime() {
+        var elt = document.getElementById("layer-clock"); 
+        var now = new Date();
+        var minutes = now.getMinutes();
+        elt.innerHTML = "" + now.getHours() + ":" + (minutes < 10 ? "0" + minutes : "" + minutes);
+        setTimeout(displayTime, 5000);             
+    }
+
+    window.onload = displayTime;
+	
+function initBlink()
+{
+    var state = false;
+    setInterval(function()
+        {
+            state = !state;
+            var color = (state?'red':'blue');
+            document.getElementById('layer-clock').style.color = color;
+        }, 1000);
+}
+        
+initBlink();	
+  </script>
+
+</body></html>
