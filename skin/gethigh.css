@@ -1,0 +1,71 @@
+	@-webkit-keyframes blink {
+			0%   { background: blue;
+      background-image: radial-gradient(circle at 50% 50%, blue 60%, #101010); }
+			50%  { background:green; background-image: radial-gradient(circle at 50% 50%, green 60%, #101010);}
+			100% { background:red; background-image: radial-gradient(circle at 50% 50%, red 60%, #101010); }
+	}
+	@-moz-keyframes blink {
+			0%   { background: blue;
+      background-image: radial-gradient(circle at 50% 50%, blue 60%, #101010); }
+			50%  { background:green; background-image: radial-gradient(circle at 50% 50%, green 60%, #101010);}
+			100% { background:red; background-image: radial-gradient(circle at 50% 50%, red 60%, #101010); }
+	}
+	@-ms-keyframes blink {
+			0%   { background: blue;
+      background-image: radial-gradient(circle at 50% 50%, blue 60%, #101010); }
+			50%  { background:green; background-image: radial-gradient(circle at 50% 50%, green 60%, #101010);}
+			100% { background:red; background-image: radial-gradient(circle at 50% 50%, red 60%, #101010);}
+	}
+	
+    #section-gethigh {
+		-webkit-animation: blink 3s infinite;
+		-moz-animation:    blink 3s infinite;
+		-ms-animation:     blink 3s infinite;	
+      min-width: 690px;
+      min-height: 640px;
+    
+      display: -webkit-flex;
+      -webkit-justify-content: center;
+      -webkit-align-items: center;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+	
+    #device-frame { 
+      position: center;
+      background-image: url(../img/xps.png); 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      top: 0;
+      width: 500px;
+      height: 684px;
+    } 
+	
+	#device-screen {
+      position: absolute;
+      left: 106px;
+      top: 49px;
+      width: 304px;
+      height: 536px;
+      color: white; 
+      overflow: hidden;  
+    } 
+	
+	.fullscreenlayer {
+        position: absolute;
+        left: 30;
+        top: 49px;
+        width: 304px;
+        height: 536px;
+    }
+	  
+    #layer-clock {     
+	  position: center;
+	  top: 250px;
+	  left: 55px;
+      font-size: 50px;
+      font-family: 'Xperia', sans-serif;
+
+    }	
