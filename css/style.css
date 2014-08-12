@@ -946,6 +946,12 @@ a.scrollup:hover{
 .social-network a.icoTwitter:hover {
 	background-color:#33ccff;
 }
+.social-network a.icoSoundCloud:hover {
+	background-color:#ff5200;
+}
+.social-network a.icoGithub:hover {
+	background-color:#4183c4;
+}
 .social-network a.icoGoogle:hover {
 	background-color:#BD3518;
 }
@@ -955,7 +961,7 @@ a.scrollup:hover{
 .social-network a.icoLinkedin:hover {
 	background-color:#007bb7;
 }
-.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, 
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoSoundCloud:hover i, .social-network a.icoGithub:hover i,
 .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
 	color:#fff;
 }
